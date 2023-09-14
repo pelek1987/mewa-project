@@ -18,7 +18,7 @@ export const Input = ({ label, type, name, id, ...props }: InputProps) => {
           type={type}
           name={name}
           id={id}
-          className="block w-full rounded-md border-0 py-1.5 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
+          className="block w-full rounded-md border-0 py-1.5 px-6 ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
           {...props}
         />
       </div>
