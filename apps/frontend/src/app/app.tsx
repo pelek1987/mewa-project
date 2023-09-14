@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react';
-import NxWelcome from './nx-welcome';
+import { Input } from '@ems/common-ui';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="greetings" />
+      <Input label="Name" type="name" name="name" id="name" />
     </div>
   );
 }
