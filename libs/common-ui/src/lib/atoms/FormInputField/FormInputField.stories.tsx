@@ -1,22 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { FormField } from './FormField';
+import { FormInputField } from './FormInputField';
 import { useForm } from 'react-hook-form';
 
-const meta: Meta<typeof FormField> = {
-  title: 'atoms/FormField',
-  component: FormField,
+const meta: Meta<typeof FormInputField> = {
+  title: 'atoms/FormInputField',
+  component: FormInputField,
 };
 
 type UserFormValues = {
   email: string;
 };
 
-const FormFieldWithReactHookForm = () => {
+const FormInputFieldWithReactHookForm = () => {
   const { register, formState } = useForm<UserFormValues>();
 
   return (
-    <FormField<UserFormValues>
+    <FormInputField<UserFormValues>
       label="Email:"
       id="email"
       placeholder="E-mail *"
@@ -28,8 +28,8 @@ const FormFieldWithReactHookForm = () => {
 };
 
 export default meta;
-type Story = StoryObj<typeof FormField>;
+type Story = StoryObj<typeof FormInputFieldWithReactHookForm>;
 
 export const Default: Story = {
-  render: () => <FormFieldWithReactHookForm />,
+  render: () => <FormInputFieldWithReactHookForm />,
 };
