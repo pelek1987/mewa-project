@@ -66,6 +66,9 @@
           "quiet": true
         }
       }
+    },
+    "chromatic": {
+      "command": "yarn nx run common-ui:build-storybook && yarn chromatic --project-token=${CHROMATIC_TOKEN} -d dist/storybook/common-ui"
     }
   }
 }

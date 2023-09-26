@@ -6507,6 +6507,11 @@ check-more-types@^2.24.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
+chromatic@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-7.2.0.tgz#2d33c39c3efe8ffea5d0b2a83d86c13adf1c0836"
+  integrity sha512-EbuvmsM6XAVFC4EQpqR2AT2PaXY4IS8qWxxg6N10AhpRulfX2b2AtW1hUc88cCosRyztd6esxkBdj3FSKR7zVw==
+
 chrome-trace-event@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
