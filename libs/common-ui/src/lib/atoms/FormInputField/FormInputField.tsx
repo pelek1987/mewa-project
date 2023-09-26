@@ -2,20 +2,20 @@ import { ComponentProps } from 'react';
 import { UseFormRegister, Path, FieldValues, FormState } from 'react-hook-form';
 import clsx from 'clsx';
 
-type FormFieldProps<T extends FieldValues> = {
+type FormInputFieldProps<T extends FieldValues> = {
   label: string;
   register: UseFormRegister<T>;
   path: Path<T>;
   formState: FormState<T>;
 };
 
-export const FormField = <T extends FieldValues>({
+export const FormInputField = <T extends FieldValues>({
   label,
   register,
   path,
   formState: { errors },
   ...restProps
-}: FormFieldProps<T> & ComponentProps<'input'>) => {
+}: FormInputFieldProps<T> & ComponentProps<'input'>) => {
   const fieldError = errors[path];
   const errorMessage = fieldError?.message;
 
