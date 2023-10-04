@@ -28,7 +28,7 @@ const FormInputFieldWithReactHookForm = () => {
 };
 
 export default meta;
-type Story = StoryObj<typeof FormInputFieldWithReactHookForm>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => <FormInputFieldWithReactHookForm />,
