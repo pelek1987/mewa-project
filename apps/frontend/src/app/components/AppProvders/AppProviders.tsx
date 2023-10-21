@@ -1,19 +1,17 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MainLayout } from '../MainLayout';
-import { HomePage } from '../../pages/HomePage';
-import { AboutPage } from '../../pages/AboutPage';
-import { ContactPage } from '../../pages/ContactPage';
-import { EmployeesPage } from '../../pages/EmployeesPgae';
+import { HomePage, AboutPage, ContactPage, EmployeesPage } from '../../pages';
+import { AppRoutes } from '../../AppRoutes';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
     children: [
-      { path: 'home', element: <HomePage /> },
-      { path: 'about', element: <AboutPage /> },
-      { path: 'contact', element: <ContactPage /> },
-      { path: 'employees', element: <EmployeesPage /> },
+      { path: AppRoutes.HOME, element: <HomePage /> },
+      { path: AppRoutes.ABOUT, element: <AboutPage /> },
+      { path: AppRoutes.CONTACT, element: <ContactPage /> },
+      { path: AppRoutes.EMPLOYEES, element: <EmployeesPage /> },
     ],
   },
 ]);
