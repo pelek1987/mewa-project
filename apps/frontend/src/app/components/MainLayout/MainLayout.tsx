@@ -3,8 +3,8 @@ import { AppRoutes } from '../../AppRoutes';
 
 export const MainLayout = () => {
   return (
-    <div>
-      <nav>
+    <div className="min-h-screen flex flex-col justify-between">
+      <nav className="mb-8 p-4">
         <ul className="flex list-none gap-x-2">
           <li>
             <Link to={AppRoutes.HOME}>Home</Link>
@@ -20,8 +20,10 @@ export const MainLayout = () => {
           </li>
         </ul>
       </nav>
-      <Outlet />
-      <footer>&copy; 2023 MEWA</footer>
+      <main className="flex-grow mb-8">
+        <Outlet />
+      </main>
+      <footer className="p-4 text-center">&copy; 2023 MEWA</footer>
     </div>
   );
 };
