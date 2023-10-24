@@ -17,6 +17,9 @@ export const Navbar = () => {
         <li>
           <Link to={AppRoutes.EMPLOYEES}>Employees</Link>
         </li>
+        <li>
+          <Link to={AppRoutes.SIGNUP}>Register</Link>
+        </li>
       </ul>
     </nav>
   );

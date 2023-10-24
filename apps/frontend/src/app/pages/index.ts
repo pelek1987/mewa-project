@@ -1,4 +1,5 @@
-export * from './HomePage';
-export * from './AboutPage';
-export * from './ContactPage';
-export * from './EmployeesPage';
+export { HomePage } from './HomePage';
+export { AboutPage } from './AboutPage';
+export { ContactPage } from './ContactPage';
+export { EmployeesPage } from './EmployeesPage';
+export { SignUpPage } from './SignUpPage';

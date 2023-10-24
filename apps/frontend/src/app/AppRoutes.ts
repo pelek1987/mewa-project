@@ -4,4 +4,5 @@ export const AppRoutes = {
   CONTACT: '/contact',
   ABOUT: '/about',
   EMPLOYEES: '/employees',
+  SIGNUP: '/signup',
 } as const;
