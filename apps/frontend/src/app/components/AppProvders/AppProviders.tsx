@@ -12,7 +12,7 @@ import { ProtectedRoute } from '../ProtectedRoute';
 import { useState } from 'react';
 
 export const AppProviders = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
 
   const router = createBrowserRouter([
     {
