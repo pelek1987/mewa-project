@@ -87,6 +87,8 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
     "jsdom": "~22.1.0",
+    "msw": "2.0.2",
+    "msw-storybook-addon": "2.0.0--canary.122.b3ed3b1.0",
     "nx": "16.5.5",
     "postcss": "^8.4.27",
     "prettier": "^2.6.2",
@@ -99,5 +101,8 @@
     "vite-plugin-dts": "~2.3.0",
     "vite-tsconfig-paths": "~4.2.0",
     "vitest": "~0.32.0"
+  },
+  "msw": {
+    "workerDirectory": "apps/frontend/public"
   }
 }
