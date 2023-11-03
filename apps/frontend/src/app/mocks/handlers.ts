@@ -1,7 +1,7 @@
 import { http, HttpResponse } from 'msw';
 
-const API_URL = 'https://randomuser.me/api/?results=5';
-const mockedEmployeesResponse = {
+export const API_URL = 'https://randomuser.me/api/?results=5';
+export const mockedEmployeesResponse = {
   results: [
     {
       name: {
@@ -44,6 +44,8 @@ const mockedEmployeesResponse = {
 
 export const handlers = [
   http.get(API_URL, () => {
-    return HttpResponse.json(mockedEmployeesResponse);
+    return HttpResponse.json(mockedEmployeesResponse, {
+      status: 200,
+    });
   }),
 ];
