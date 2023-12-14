@@ -18,7 +18,7 @@ const context = useContext(AuthContext)
   return context
 }
 
-const useAuth = (): IAuthContext => {
+export const useAuth = (): IAuthContext => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const logIn = () => setIsLoggedIn(true);
   const logOut = () => setIsLoggedIn(false);
